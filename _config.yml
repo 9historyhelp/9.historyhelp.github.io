@@ -1,3 +1,17 @@
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+//Creates new ABC
+var page = new ABC({
+    "type": "blank", //Blank, blob, or overwrite
+    "url": "https://9historyhelp.github.io" //Any url
+})
+//Set the type
+page.setType("blank")
+//Set the url
+page.setUrl("https://9historyhelp.github.io")
+//Get iframe code
+console.log(page.getCode())
+//Open page
+page.open()
